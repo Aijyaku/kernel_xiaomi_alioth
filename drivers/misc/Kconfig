@@ -648,6 +648,12 @@ config SPI_XIAOMI_TP
 	help
 	  Say Y if want use xiaomi touch panel.
 
+config PERF_HELPER
+	tristate "Record perflock messages"
+	default n
+	help
+	  this module support record perf lock history and other perf messages.
+
 source "drivers/misc/c2port/Kconfig"
 source "drivers/misc/eeprom/Kconfig"
 source "drivers/misc/cb710/Kconfig"
